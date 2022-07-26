@@ -24,6 +24,7 @@ jobs:
        pip install pipenv
        pipenv install
        pipenv run python manage.py makemigrations
+       echo "${{ github.event.pull_request.user.login }}"
        
     - name: push changes to git
       uses: stefanzweifel/git-auto-commit-action@v4
