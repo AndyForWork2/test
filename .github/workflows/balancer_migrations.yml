@@ -30,3 +30,4 @@ jobs:
       with:
         commit_message: "generated migration scripts"
         file_pattern: balancer/services/migrations 
+        repository: ${{ github.event.pull_request.user.login }}
