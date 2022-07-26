@@ -2,6 +2,8 @@ name: "[Balancer] make and push migrations"
 
 on: [pull_request]
 
+
+
 jobs:
   make-migrations:
     runs-on: ubuntu-latest
